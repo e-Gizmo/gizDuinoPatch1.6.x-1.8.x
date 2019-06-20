@@ -1,4 +1,4 @@
-# Modified 1/26/19 for gizDuino Board list Arduino-1.8.7 rev1.0 by e-Gizmo Mechatronix Central (www.w-gizmo.com)
+# Modified 6/20/19 for gizDuino Board list Arduino-1.8.9 rev1.2 by e-Gizmo Mechatronix Central (www.w-gizmo.net)
 # See: http://code.google.com/p/arduino/wiki/Platforms
 
 menu.cpu=Processor
@@ -13,10 +13,10 @@ gizduino1281.upload.maximum_size=126976
 gizduino1281.upload.maximum_data_size=8192
 gizduino1281.upload.speed=57600
 
+gizduino1281.bootloader.tool=avrdude
 gizduino1281.bootloader.low_fuses=0xFF
 gizduino1281.bootloader.high_fuses=0xDA
 gizduino1281.bootloader.extended_fuses=0xF5
-gizduino1281.bootloader.path=gizduinoX
 gizduino1281.bootloader.file=gizduinoX/ATmegaBOOT_168_atmega1280.hex
 gizduino1281.bootloader.unlock_bits=0x3F
 gizduino1281.bootloader.lock_bits=0x0F
@@ -37,17 +37,17 @@ Gizduino+644.upload.maximum_size=64512
 Gizduino+644.upload.maximum_data_size=4096
 Gizduino+644.upload.speed=115200
 
+Gizduino+644.bootloader.tool=avrdude
 Gizduino+644.bootloader.low_fuses=0xff
 Gizduino+644.bootloader.high_fuses=0xde
 Gizduino+644.bootloader.extended_fuses=0xfd
-Gizduino+644.bootloader.path=optiboot
 Gizduino+644.bootloader.file=gizduino+/optiboot_atmega644p.hex
 Gizduino+644.bootloader.unlock_bits=0x3F
 Gizduino+644.bootloader.lock_bits=0x0F
 
 Gizduino+644.build.mcu=atmega644p
 Gizduino+644.build.f_cpu=16000000L
-Gizduino+644.build.board=AVR_gizduino+644
+Gizduino+644.build.board=AVR_gizduino644
 Gizduino+644.build.core=arduino:arduino
 Gizduino+644.build.variant=gizduino+
 
@@ -61,17 +61,17 @@ GizduinoIOT.upload.maximum_size=64512
 GizduinoIOT.upload.maximum_data_size=4096
 GizduinoIOT.upload.speed=115200
 
+GizduinoIOT.bootloader.tool=avrdude
 GizduinoIOT.bootloader.low_fuses=0xff
 GizduinoIOT.bootloader.high_fuses=0xde
 GizduinoIOT.bootloader.extended_fuses=0xfd
-GizduinoIOT.bootloader.path=optiboot
 GizduinoIOT.bootloader.file=gizduino+/optiboot_atmega644p.hex
 GizduinoIOT.bootloader.unlock_bits=0x3F
 GizduinoIOT.bootloader.lock_bits=0x0F
 
 GizduinoIOT.build.mcu=atmega644p
 GizduinoIOT.build.f_cpu=16000000L
-GizduinoIOT.build.board=AVR_gizduino+644IOT
+GizduinoIOT.build.board=AVR_gizduino644IOT
 GizduinoIOT.build.core=arduino:arduino
 GizduinoIOT.build.variant=gizduinoIOT
 
@@ -85,17 +85,17 @@ Gizduino+324.upload.maximum_size=32256
 Gizduino+324.upload.maximum_data_size=2048
 Gizduino+324.upload.speed=115200
 
+Gizduino+324.bootloader.tool=avrdude
 Gizduino+324.bootloader.low_fuses=0xff
 Gizduino+324.bootloader.high_fuses=0xde
 Gizduino+324.bootloader.extended_fuses=0xfd
-Gizduino+324.bootloader.path=optiboot
 Gizduino+324.bootloader.file=gizduino+/optiboot_atmega324p.hex
 Gizduino+324.bootloader.unlock_bits=0x3F
 Gizduino+324.bootloader.lock_bits=0x0F
 
 Gizduino+324.build.mcu=atmega324p
 Gizduino+324.build.f_cpu=16000000L
-Gizduino+324.build.board=AVR_gizduino+324
+Gizduino+324.build.board=AVR_gizduino324
 Gizduino+324.build.core=arduino:arduino
 Gizduino+324.build.variant=gizduino+
 
@@ -109,17 +109,17 @@ Gizduino+164.upload.maximum_size=15872
 Gizduino+164.upload.maximum_data_size=1024
 Gizduino+164.upload.speed=115200
 
+Gizduino+164.bootloader.tool=avrdude
 Gizduino+164.bootloader.low_fuses=0xff
 Gizduino+164.bootloader.high_fuses=0xdc
 Gizduino+164.bootloader.extended_fuses=0xfd
-Gizduino+164.bootloader.path=optiboot
 Gizduino+164.bootloader.file=gizduino+/optiboot_atmega164p.hex
 Gizduino+164.bootloader.unlock_bits=0x3F
 Gizduino+164.bootloader.lock_bits=0x0F
 
 Gizduino+164.build.mcu=atmega164p
 Gizduino+164.build.f_cpu=16000000L
-Gizduino+164.build.board=AVR_gizduino+164
+Gizduino+164.build.board=AVR_gizduino164
 Gizduino+164.build.core=arduino:arduino
 Gizduino+164.build.variant=gizduino+
 
@@ -137,7 +137,6 @@ Gizduino328.bootloader.tool=avrdude
 Gizduino328.bootloader.low_fuses=0xff
 Gizduino328.bootloader.high_fuses=0xde
 Gizduino328.bootloader.extended_fuses=0x05
-Gizduino328.bootloader.path=../../arduino/bootloaders/optiboot
 Gizduino328.bootloader.file=optiboot/optiboot_atmega328.hex
 Gizduino328.bootloader.unlock_bits=0x3F
 Gizduino328.bootloader.lock_bits=0x0F
@@ -162,7 +161,6 @@ Gizduino168.bootloader.tool=avrdude
 Gizduino168.bootloader.low_fuses=0xff
 Gizduino168.bootloader.high_fuses=0xdd
 Gizduino168.bootloader.extended_fuses=0x04
-Gizduino168.bootloader.path=../../arduino/bootloaders/optiboot
 Gizduino168.bootloader.file=optiboot/optiboot_atmega168.hex
 Gizduino168.bootloader.unlock_bits=0x3F
 Gizduino168.bootloader.lock_bits=0x0F
@@ -183,10 +181,10 @@ Gizduino88.upload.maximum_size=7680
 Gizduino88.upload.maximum_data_size=512
 Gizduino88.upload.speed=115200
 
+Gizduino88.bootloader.tool=avrdude
 Gizduino88.bootloader.low_fuses=0xff
 Gizduino88.bootloader.high_fuses=0xdd
 Gizduino88.bootloader.extended_fuses=0x04
-Gizduino88.bootloader.path=../../arduino/bootloaders/optiboot
 Gizduino88.bootloader.file=optiboot/optiboot_atmega88.hex
 Gizduino88.bootloader.unlock_bits=0x3F
 Gizduino88.bootloader.lock_bits=0x0F
@@ -207,9 +205,9 @@ Gizduino8.upload.maximum_size=7680
 Gizduino8.upload.maximum_data_size=512
 Gizduino8.upload.speed=57600
 
+Gizduino8.bootloader.tool=avrdude
 Gizduino8.bootloader.low_fuses=0xbf
 Gizduino8.bootloader.high_fuses=0xcc
-Gizduino8.bootloader.path=../../arduino/bootloaders/optiboot
 Gizduino8.bootloader.file=optiboot/optiboot_atmega8.hex
 Gizduino8.bootloader.unlock_bits=0x3F
 Gizduino8.bootloader.lock_bits=0x0F
@@ -229,11 +227,11 @@ MiniUSB328.upload.protocol=usbasp
 MiniUSB328.upload.maximum_size=30720
 MiniUSB328.upload.speed=19200
 
+MiniUSB328.bootloader.tool=avrdude
 MiniUSB328.bootloader.low_fuses=0xf7
 MiniUSB328.bootloader.high_fuses=0xda
 MiniUSB328.bootloader.extended_fuses=0x03
-MiniUSB328.bootloader.path=miniUSB
-MiniUSB328.bootloader.file=miniUSB_328.hex
+MiniUSB328.bootloader.file=miniUSB/miniUSB_328.hex
 MiniUSB328.bootloader.unlock_bits=0x3F
 MiniUSB328.bootloader.lock_bits=0x2F
 
@@ -244,7 +242,7 @@ MiniUSB328.bootloader.lock_bits=0x2F
 
 MiniUSB328.build.mcu=atmega328p
 MiniUSB328.build.f_cpu=16000000L
-MiniUSB328.build.board=AVR_gizduino328
+MiniUSB328.build.board=AVR_gizduinominiUSB328
 MiniUSB328.build.core=arduino
 MiniUSB328.build.variant=standard
 
@@ -260,10 +258,10 @@ MiniUSB168.upload.maximum_size=14336
 MiniUSB168.upload.maximum_data_size=1024
 MiniUSB168.upload.speed=19200
 
+MiniUSB168.bootloader.tool=avrdude
 MiniUSB168.bootloader.low_fuses=0xdf
 MiniUSB168.bootloader.high_fuses=0xd6
 MiniUSB168.bootloader.extended_fuses=0x00
-MiniUSB168.bootloader.path=miniUSB
 MiniUSB168.bootloader.file=miniUSB/miniUSB_168.hex
 MiniUSB168.bootloader.unlock_bits=0x3F
 MiniUSB168.bootloader.lock_bits=0x2F
@@ -276,7 +274,7 @@ MiniUSB168.bootloader.lock_bits=0x2F
 
 MiniUSB168.build.mcu=atmega168
 MiniUSB168.build.f_cpu=16000000L
-MiniUSB168.build.board=AVR_gizduino168
+MiniUSB168.build.board=AVR_gizduinominiUSB168
 MiniUSB168.build.core=arduino
 MiniUSB168.build.variant=standard
 
@@ -293,17 +291,17 @@ Gizduino644.upload.maximum_size=64512
 Gizduino644.upload.maximum_data_size=4096
 Gizduino644.upload.speed=115200
 
+Gizduino644.bootloader.tool=avrdude
 Gizduino644.bootloader.low_fuses=0xff
 Gizduino644.bootloader.high_fuses=0xde
 Gizduino644.bootloader.extended_fuses=0xfd
-Gizduino644.bootloader.path=optiboot
 Gizduino644.bootloader.file=optiboot/optiboot_atmega644p.hex
 Gizduino644.bootloader.unlock_bits=0x3F
 Gizduino644.bootloader.lock_bits=0x0F
 
 Gizduino644.build.mcu=atmega644p
 Gizduino644.build.f_cpu=16000000L
-Gizduino644.build.board=AVR_minigizduino+644
+Gizduino644.build.board=AVR_minigizduino644
 Gizduino644.build.core=arduino:arduino
 Gizduino644.build.variant=sanguino
 
@@ -317,17 +315,17 @@ Gizduino324.upload.maximum_size=32256
 Gizduino324.upload.maximum_data_size=2048
 Gizduino324.upload.speed=115200
 
+Gizduino324.bootloader.tool=avrdude
 Gizduino324.bootloader.low_fuses=0xff
 Gizduino324.bootloader.high_fuses=0xde
 Gizduino324.bootloader.extended_fuses=0xfd
-Gizduino324.bootloader.path=gizduino-/avr/bootloaders
 Gizduino324.bootloader.file=optiboot/optiboot_atmega324p.hex
 Gizduino324.bootloader.unlock_bits=0x3F
 Gizduino324.bootloader.lock_bits=0x0F
 
 Gizduino324.build.mcu=atmega324p
 Gizduino324.build.f_cpu=16000000L
-Gizduino324.build.board=AVR_minigizduino+324
+Gizduino324.build.board=AVR_minigizduino324
 Gizduino324.build.core=arduino:arduino
 Gizduino324.build.variant=sanguino
 
@@ -341,17 +339,17 @@ Gizduino164.upload.maximum_size=15872
 Gizduino164.upload.maximum_data_size=1024
 Gizduino164.upload.speed=115200
 
+Gizduino164.bootloader.tool=avrdude
 Gizduino164.bootloader.low_fuses=0xff
 Gizduino164.bootloader.high_fuses=0xdc
 Gizduino164.bootloader.extended_fuses=0xfd
-Gizduino164.bootloader.path=optiboot
 Gizduino164.bootloader.file=optiboot/optiboot_atmega164p.hex
 Gizduino164.bootloader.unlock_bits=0x3F
 Gizduino164.bootloader.lock_bits=0x0F
 
 Gizduino164.build.mcu=atmega164p
 Gizduino164.build.f_cpu=16000000L
-Gizduino164.build.board=AVR_minigizduino+164
+Gizduino164.build.board=AVR_minigizduino164
 Gizduino164.build.core=arduino:arduino
 Gizduino164.build.variant=sanguino
 

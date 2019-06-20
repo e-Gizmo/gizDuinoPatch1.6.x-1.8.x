@@ -40,7 +40,7 @@
    PCINT23-16: D23-16 : bit 2
    PCINT7-0: D24-31   : bit 0
    */
-
+#define LED_BUILTIN (0)
 #define NUM_DIGITAL_PINS            31
 #define NUM_ANALOG_INPUTS           8
 #define analogInputToDigitalPin(p)  ((p < NUM_ANALOG_INPUTS) ? (p) + 24 : -1)
